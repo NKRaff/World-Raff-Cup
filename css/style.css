@@ -1,3 +1,58 @@
+:root{
+    /* CSS HEX */
+    --black: #000000ff;
+    --oxford-blue: #14213dff;
+    --orange-web: #fca311ff;
+    --platinum: #e5e5e5ff;
+    --white: #ffffffff;
+
+    /* CSS HEX */
+    --rich-black-fogra-39: #0b090aff;
+    --eerie-black: #161a1dff;
+    --blood-red: #660708ff;
+    --ruby-red: #a4161aff;
+    --carnelian: #ba181bff;
+    --imperial-red: #e5383bff;
+    --black-shadows: #b1a7a6ff;
+    --light-gray: #d3d3d3ff;
+    --cultured: #f5f3f4ff;
+    --white: #ffffffff;
+}
+
 .dropdown-item:hover{
     background-color: #191919;
+}
+#background{
+    background-image: linear-gradient(#14213d, #000000);
+    height: 100vh;
+}
+
+/* Slider */
+#container{
+    padding: 0;
+}
+#carouselExampleControls .carousel-inner, #carouselExampleControls .carousel-item{
+    height: 55vh;
+}
+#carouselExampleControls .carousel-caption{
+    top: 70%;
+}
+#carouselExampleControls .carousel-caption h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+#carouselExampleControls .carousel-caption p{
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 100px;
+    color: #fff;
+}
+.overlay-image{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
 }
