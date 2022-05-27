@@ -49,45 +49,40 @@
         </nav>    
     </header>
 
-    
-    
-        <section class="container-fluid" id="container">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="overlay-image" style="background-image: url(../images/Banner/Banner-01.jpg);">
-                            <!--<img src="../images/Banner/Banner-01.jpg" class="d-block w-100" alt="Banner-01">-->
-                        </div>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h2>World Cup</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos earum ipsa perspiciatis debitis aperiam numquam reprehenderit vitae odit, quaerat esse!</p>
-                        </div>
-                        
-                    </div>
-                    <div class="carousel-item">
-                        <div class="overlay-image" style="background-image: url(../images/Banner/Banner-02.jpg);">
-                            <!--<img src="../images/Banner/Banner-01.jpg" class="d-block w-100" alt="Banner-01">-->
-                        </div>
-                        <!--<img src="../images/Banner/Banner-02.jpg" class="d-block w-100" alt="Banner-02">-->
+    <section>
+        <div id="myCarousel" class="carousel slide" dara-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container" id="container-carousel">
+                        <h1>Lorem, ipsum dolor.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem tempore consequatur unde amet odio pariatur. Est minus blanditiis, neque rem voluptatem excepturi soluta at, sint, ipsum numquam ratione adipisci maxime!</p>
+                        <a href="#" class="btn btn-lg btn-primary">Lorem, ipsum.</a>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="carousel-item">
+                    <div class="container" id="container-carousel">
+                        <h1>Lorem, ipsum dolor.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem tempore consequatur unde amet odio pariatur. Est minus blanditiis, neque rem voluptatem excepturi soluta at, sint, ipsum numquam ratione adipisci maxime!</p>
+                        <a href="#" class="btn btn-lg btn-primary">Lorem, ipsum.</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container" id="container-carousel">
+                        <h1>Lorem, ipsum dolor.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem tempore consequatur unde amet odio pariatur. Est minus blanditiis, neque rem voluptatem excepturi soluta at, sint, ipsum numquam ratione adipisci maxime!</p>
+                        <a href="#" class="btn btn-lg btn-primary">Lorem, ipsum.</a>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <section id="background" class="bg-image">
-            <div class="container bg-light">
-                teste
-            </div>
-        </section>
+        </div>
     </section>
+
+    
     
     <!-- Scripts -->
     <script src="../js/boostrap.js"></script>
