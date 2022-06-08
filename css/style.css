@@ -19,12 +19,41 @@
     --white: #ffffffff;
 }
 
-.dropdown-item:hover{
-    background-color: #191919;
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #fca311 #000000;
 }
-body{
-    background-image: linear-gradient(#14213d, #000000);
-    height: 100vh;
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #14213d;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #fca311;
+  border-radius: 15px;
+  border: 0px none #e5e5e5;
+}
+
+html{
+  height: 100vh;
+}
+
+.dropdown-item:hover{
+    background-color: #fca311;
+}
+.body{
+    background: linear-gradient(#294174, #000000);
+    height: 100%;
+	  background-repeat: no-repeat;
+    margin: 0;
+    background-attachment: fixed;
 }
 
 /* Carousel */
