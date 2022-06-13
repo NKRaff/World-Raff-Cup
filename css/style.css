@@ -42,19 +42,49 @@
   border: 0px none #e5e5e5;
 }
 
-html{
-  height: 100vh;
+*{
+  font-family: 'Roboto', sans-serif;
 }
 
-.dropdown-item:hover{
-    background-color: #fca311;
+html{
+  height: 100vh;
+  
 }
+
 body{
     background: linear-gradient(#294174, #000000);
     height: 100%;
 	  background-repeat: no-repeat;
     margin: 0;
     background-attachment: fixed;
+}
+.font-12{
+  font-size: 12px;
+}
+.font-14{
+  font-size: 14px;
+}
+.font-16{
+  font-size: 16px;
+}
+.font-24{
+  font-size: 24px;
+}
+
+.nav-item a:hover{
+  color: #fca311 !important;
+}
+
+a.dropdown-item:hover{
+  background-color: #fca311 !important;
+  color: #f4f4f4 !important;
+}
+
+.next-match-box{
+  height: 100%;
+}
+.nms-box{
+  height: 75%;
 }
 
 /* Carousel */
@@ -64,10 +94,7 @@ body{
     color: #fff;
     position: relative;
 }
-#container-carousel{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-bottom: 50px;
-}
+
+
+
+
