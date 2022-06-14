@@ -52,11 +52,14 @@ html{
 }
 
 body{
-    background: linear-gradient(#294174, #000000);
+    
     height: 100%;
 	  background-repeat: no-repeat;
     margin: 0;
     background-attachment: fixed;
+}
+.body{
+  background: linear-gradient(#294174, #000000);
 }
 .font-12{
   font-size: 12px;
@@ -80,13 +83,6 @@ a.dropdown-item:hover{
   color: #f4f4f4 !important;
 }
 
-.next-match-box{
-  height: 100%;
-}
-.nms-box{
-  height: 75%;
-}
-
 /* Carousel */
 .carousel-item{
     height: 32rem;
@@ -95,6 +91,28 @@ a.dropdown-item:hover{
     position: relative;
 }
 
+#home-rank{
+  background-image: url(../content/images/background/background_01.jpg);
+  height: 100%;
+}
 
+.owl-nav{
+  position: absolute;
+  top: -3rem;
+  right: 0;
+}
+.owl-nav img{
+  width: 24px;
+  
+}
 
+.owl-nav .owl-prev, .owl-nav .owl-next{
+  
+  transition: all .5s ease;
+  
+} 
 
+.owl-nav .owl-prev:hover, .owl-nav .owl-next:hover{
+  
+  
+} 

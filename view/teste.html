@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Raff Cup</title>
     <!-- Styles -->
-    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
-    
+
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-
+    <!-- Header - Start-->
     <header>
         <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid px-5">
@@ -33,7 +34,7 @@
                             <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Partidas</a>
+                            <a class="nav-link text-white" href="#">Calendario</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#">Notícias</a>
@@ -48,6 +49,7 @@
                             <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item text-white" href="./fase-de-grupo.html">Fase de Grupo</a></li>
                             <li><a class="dropdown-item text-white" href="./fase-final.html">Fase Final</a></li>
+                            <li><a class="dropdown-item text-white" href="./fase-final.html">Ranking</a></li>
                             </ul>
                         </li>
                         </ul>
@@ -56,7 +58,8 @@
             </div>
         </nav>    
     </header>
-
+    <!-- Header - End-->
+    <!-- Slider - Start-->
     <section class="border-top border-bottom">
         <div id="myCarousel" class="carousel slide" dara-ride="carousel">
             <ol class="carousel-indicators">
@@ -87,15 +90,154 @@
                   <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
-                  </button>
+                </button>
             </div>
         </div>
     </section>
-
+    <!-- Slider - End-->
     <section class="body">
+
+        <!-- Próximos Jogos - Start-->
+        
+        <!-- Próximos Jogos - End-->
+
+        <!-- Ultimas Noticias - Start -->
+        <div class="container">
+            <h3 class="text-primary">Ultimas Noticias</h3>
+            <div class="row">
+                <div class="owl-carousel news-carousel owl-theme">
+                    <div class="item">
+                        <div class="card border-0">
+                            <img src="../content/images/news/news_01.jpg" alt="Imagem da noticia">
+                            <div class="card-body">
+                                <small class="font-12">27 Julho, 2022</small>
+                                <h5 class="font-24">Titulo</h5>
+                                <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum expedita ipsam voluptatem repellat fugit nemo odio eveniet dolorum sapiente cumque.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card border-0">
+                            <img src="../content/images/news/news_02.jpg" alt="Imagem da noticia">
+                            <div class="card-body">
+                                <small class="font-12">27 Julho, 2022</small>
+                                <h5 class="font-24">Titulo</h5>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, praesentium impedit consequuntur a earum quia enim distinctio quisquam laudantium dicta.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card border-0">
+                            <img src="../content/images/news/news_03.jpg" alt="Imagem da noticia">
+                            <div class="card-body">
+                                <small class="font-12">27 Julho, 2022</small>
+                                <h5 class="font-24">Titulo</h5>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil blanditiis eveniet inventore iure delectus vitae quasi, officiis necessitatibus sapiente dolorem!</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <div class="card border-0">
+                            <img src="../content/images/news/news_01.jpg" alt="Imagem da noticia">
+                            <div class="card-body">
+                                <small class="font-12">27 Julho, 2022</small>
+                                <h5 class="font-24">Titulo</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam neque mollitia quae et animi voluptates molestiae qui quisquam omnis est?</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <!-- Ultimas Noticias - End -->
+
+
+
+<!-- Top Jogadores - Start -->
+        <div class="container-fluid">
+            <div class="container">
+                <h3 class="text-primary mt-5 mb-3">Top Jogadores</h3>
+                <div class="row">
+                    <div class="owl-carousel players-carousel owl-theme mb-5">
+                        <div class="item">
+                            <div class="card border-0 bg-dark text-white">
+                                <img src="../content/images/players/player_01.jpg" alt="">
+                                <div class="card-body text-center">
+                                    <h5 class="font-24 border-bottom pb-2">Nome Jogador</h5>
+                                    <div class="row">
+                                        <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                            <small class="font-16">Função</small>
+                                        </div>
+                                        <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                            <img src="../content/images/countries/Catar.png" alt="" style="width: 48px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border-0 bg-dark text-white">
+                            <img src="../content/images/players/player_02.jpg" alt="">
+                            <div class="card-body text-center">
+                                <h5 class="font-24 border-bottom pb-2">Nome Jogador</h5>
+                                <div class="row">
+                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                        <small class="font-16">Função</small>
+                                    </div>
+                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                        <img src="../content/images/countries/Catar.png" alt="" style="width: 48px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border-0 bg-dark text-white">
+                            <img src="../content/images/players/player_03.jpg" alt="">
+                            <div class="card-body text-center">
+                                <h5 class="font-24 border-bottom pb-2">Nome Jogador</h5>
+                                <div class="row">
+                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                        <small class="font-16">Função</small>
+                                    </div>
+                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                        <img src="../content/images/countries/Catar.png" alt="" style="width: 48px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border-0 bg-dark text-white">
+                            <img src="../content/images/players/player_04.jpg" alt="">
+                            <div class="card-body text-center">
+                                <h5 class="font-24 border-bottom pb-2">Nome Jogador</h5>
+                                <div class="row">
+                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                        <small class="font-16">Função</small>
+                                    </div>
+                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                        <img src="../content/images/countries/Catar.png" alt="" style="width: 48px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+ <!-- Top Jogadores - End -->
+
+       
         
     </section>
 
+    <!-- Footer -->
     <div class="container-fluid bg-dark">
         <div class="container text-white">
             <footer class="pt-5">
@@ -148,8 +290,11 @@
     </div>
 
     <!-- Scripts -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
     <script src="../js/bootstrap.js"></script>
-    <script src="https://kit.fontawesome.com/20102b8b28.js" crossorigin="anonymous"></script>
+    <script src="../js/fontawesome.min.js"></script>
+    <script src="../js/scripts.js"></script>
     
 </body>
 </html>

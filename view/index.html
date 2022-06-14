@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
 
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-
+    <!-- Header - Start-->
     <header>
         <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid px-5">
@@ -31,7 +34,7 @@
                             <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Partidas</a>
+                            <a class="nav-link text-white" href="#">Calendario</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#">Notícias</a>
@@ -46,6 +49,7 @@
                             <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item text-white" href="./fase-de-grupo.html">Fase de Grupo</a></li>
                             <li><a class="dropdown-item text-white" href="./fase-final.html">Fase Final</a></li>
+                            <li><a class="dropdown-item text-white" href="./fase-final.html">Ranking</a></li>
                             </ul>
                         </li>
                         </ul>
@@ -54,7 +58,8 @@
             </div>
         </nav>    
     </header>
-
+    <!-- Header - End-->
+    <!-- Slider - Start-->
     <section class="border-top border-bottom">
         <div id="myCarousel" class="carousel slide" dara-ride="carousel">
             <ol class="carousel-indicators">
@@ -85,67 +90,76 @@
                   <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
-                  </button>
+                </button>
             </div>
         </div>
     </section>
-
+    <!-- Slider - End-->
     <section class="body">
 
-        <!-- Próximos Jogos -->
+        <!-- Próximos Jogos - Start-->
         <div class="container">
             <div class="row">
-              <div class="col-lg-8 col-md-7 mt-2 mb-5"> 
+              <div class="col-lg-8 col-md-7 mt-2 mb-5 d-flex align-items-center justify-content-center"> 
                 <!--Last Match Result Start-->
-                <div class="next-match-box bg-light">
-                  <h4 class="bg-primary px-5 py-2 fs-3 text-light">Proxima Partida</h4>
+                <div class="next-match-box bg-dark pb-2 text-light" style="width: 100%;">
+                  <h4 class="bg-primary px-5 py-2 fs-3 text-white">Proxima Partida</h4>
                   <div class="nms-box next-match-box">
                     <div class="row align-items-center next-match-box">
                       <div class="col-sm-4 d-flex justify-content-center text-center">
-                        <div> <strong>Catar</strong> <img src="../content/images/countries/Catar.png" alt=""> </div>
+                        <div class="my-2"> <strong>Senegal</strong> <img src="../content/images/countries/Senegal.png" alt=""> </div>
                       </div>
                       <div class="col-sm-4 d-flex justify-content-center text-center">
-                        <div class="nms-info my-5"> 
+                        <div class="nms-info mt-3"> 
                           <strong class="px-3 py-1 border border-opacity-50 rounded-4 bg-secondary bg-opacity-10 text-primary font-12">
                               VS
                           </strong>
-                          <p class="my-1 font-16 text-primary"><strong>Super Euro League</strong></p>
-                          <p class="font-14 m-0">20 July, 2018   |   04:00 PM GMT+</p>
-                          <p class="font-14 text-primary my-2"><span>New Expo Stadium, NYK</span></p>
-                          <a href="#" class="btn btn-primary">Ver Calendario</a> </div>
+                          
+                          <p class="my-1 mt-2 font-16 text-primary"><strong>World Cup</strong></p>
+                          <p class="mb-2 font-12 text-primary"><strong>Grupo A</strong></p>
+                        </div>
                       </div>
                       <div class="col-sm-4 d-flex justify-content-center text-center">
-                        <div class="team-logo-right"><img src="../content/images/countries/Catar.png" alt=""> <strong>Catar</strong> </div>
+                        <div class="my-2"><img src="../content/images/countries/Holanda.png" alt=""> <strong>Holanda</strong> </div>
                       </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 d-flex justify-content-center text-center">
+                            <div class="nms-info my-3 "> 
+                                <p class="font-14 m-0">21 Nov, 2022 | 07:00 AM GMT-3</p>
+                                <p class="font-14 mb-3"><a href="#" class="font-14 text-primary" style="text-decoration: none;">Al Thumama Stadium</a>, Al Thumama</p>
+                                <a href="#" class="btn btn-primary">Ver Calendario</a> 
+                            </div>
+                        </div>
                     </div>
                   </div>
                 </div>
                 <!--Last Match Result End--> 
               </div>
-              <div class="col-lg-4 col-md-5 mt-2 mb-5">
-                  <div class="bg-light">
+              <div class="col-lg-4 col-md-5 mt-2 mb-5 d-flex align-items-center justify-content-center">
+                  <div class="bg-dark text-white">
                       <div class="row">
-                          <div class="col-md-12 ">
+                          <div class="col-md-12">
                               <div class="border">
                                   <div class="row align-items-center justify-content-center ">
                                       <div class="col-md-4">
                                           <div class="row">
                                               <div class="col-md-12 d-flex justify-content-center">
-                                                  <img src="../content/images/countries/Catar.png" alt="">
+                                                  <img src="../content/images/countries/Inglaterra.png" alt="">
                                               </div>
                                           </div>
                                           <div class="row">
                                               <div class="col-md-12 text-center">
-                                                  <strong>Catar</strong>
+                                                  <strong>Inglaterra</strong>
                                               </div>
                                           </div>
                                       </div>
                                       <div class="col-md-4 text-center justify-content-center my-2">
                                           <p class="mb-0"> 
-                                              <strong class="font-14 text-primary">Super Asia Cup</strong> 
+                                              <strong class="font-14 text-primary">World Cup</strong> 
                                               <p class="font-14 mb-0">
-                                                  20 December, 2018
-                                                  04:00 PM GMT+
+                                                  21 Nov, 2022
+                                                  10:00 AM GMT-3
                                               </p> 
                                           </p>
                                           <strong class="px-3 py-1 border border-opacity-50 rounded-4 bg-secondary bg-opacity-10 text-primary font-12">
@@ -155,12 +169,12 @@
                                       <div class="col-md-4">
                                           <div class="row">
                                               <div class="col-md-12 d-flex justify-content-center">
-                                                  <img src="../content/images/countries/Catar.png" alt="">
+                                                  <img src="../content/images/countries/Irã.png" alt="">
                                               </div>
                                           </div>
                                           <div class="row">
                                               <div class="col-md-12 text-center">
-                                                  <strong>Catar</strong>
+                                                  <strong>Irã</strong>
                                               </div>
                                           </div>
                                       </div>
@@ -168,7 +182,7 @@
                                   <div class="row">
                                       <div class="col-md-12 text-center">
                                           <div class="border-top bg-secondary bg-opacity-10 py-1">
-                                              <i class="fa-solid fa-location-dot text-primary"></i> New Expo Stadium, NYK
+                                              <i class="fa-solid fa-location-dot text-primary"></i> Estádio Internacional Khalifa, Doha
                                           </div>
                                       </div>
                                   </div>
@@ -177,7 +191,7 @@
                       </div>
 
                       <div class="row">
-                          <div class="col-md-12 ">
+                          <div class="col-md-12">
                               <div class="border">
                                   <div class="row d-flex align-items-center justify-content-center ">
                                       <div class="col-md-4">
@@ -194,10 +208,10 @@
                                       </div>
                                       <div class="col-md-4 text-center justify-content-center my-2">
                                           <p class="mb-0"> 
-                                              <strong class="font-14 text-primary">Super Asia Cup</strong> 
+                                              <strong class="font-14 text-primary">World Cup</strong> 
                                               <p class="font-14 mb-0">
-                                                  20 December, 2018
-                                                  04:00 PM GMT+
+                                                  21 Nov, 2022
+                                                  01:00 PM GMT-3
                                               </p> 
                                           </p>
                                           <strong class="px-3 py-1 border border-opacity-50 rounded-4 bg-secondary bg-opacity-10 text-primary font-12">
@@ -207,12 +221,12 @@
                                       <div class="col-md-4">
                                           <div class="row">
                                               <div class="col-md-12 d-flex justify-content-center">
-                                                  <img src="../content/images/countries/Catar.png" alt="">
+                                                  <img src="../content/images/countries/Equador.png" alt="">
                                               </div>
                                           </div>
                                           <div class="row">
                                               <div class="col-md-12 text-center">
-                                                  <strong>Catar</strong>
+                                                  <strong>Equador</strong>
                                               </div>
                                           </div>
                                       </div>
@@ -220,7 +234,7 @@
                                   <div class="row">
                                       <div class="col-md-12 text-center">
                                           <div class="border-top bg-secondary bg-opacity-10 py-1">
-                                              <i class="fa-solid fa-location-dot text-primary"></i> New Expo Stadium, NYK
+                                              <i class="fa-solid fa-location-dot text-primary"></i> Al Bayt Stadium, Al Khor
                                           </div>
                                       </div>
                                   </div>
@@ -231,9 +245,255 @@
               </div>
             </div>
         </div>
+        <!-- Próximos Jogos - End-->
+
+        <!-- Ultimas Noticias - Start -->
+        <div class="container">
+            <h3 class="text-primary">Ultimas Noticias</h3>
+            <div class="row">
+                <div class="owl-carousel news-carousel owl-theme">
+                    <div class="item">
+                        <div class="card border-0">
+                            <img src="../content/images/news/news_01.jpg" alt="Imagem da noticia">
+                            <div class="card-body">
+                                <small class="font-12">27 Julho, 2022</small>
+                                <h5 class="font-24">Titulo</h5>
+                                <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum expedita ipsam voluptatem repellat fugit nemo odio eveniet dolorum sapiente cumque.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card border-0">
+                            <img src="../content/images/news/news_02.jpg" alt="Imagem da noticia">
+                            <div class="card-body">
+                                <small class="font-12">27 Julho, 2022</small>
+                                <h5 class="font-24">Titulo</h5>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, praesentium impedit consequuntur a earum quia enim distinctio quisquam laudantium dicta.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card border-0">
+                            <img src="../content/images/news/news_03.jpg" alt="Imagem da noticia">
+                            <div class="card-body">
+                                <small class="font-12">27 Julho, 2022</small>
+                                <h5 class="font-24">Titulo</h5>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil blanditiis eveniet inventore iure delectus vitae quasi, officiis necessitatibus sapiente dolorem!</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <div class="card border-0">
+                            <img src="../content/images/news/news_01.jpg" alt="Imagem da noticia">
+                            <div class="card-body">
+                                <small class="font-12">27 Julho, 2022</small>
+                                <h5 class="font-24">Titulo</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam neque mollitia quae et animi voluptates molestiae qui quisquam omnis est?</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <!-- Ultimas Noticias - End -->
+
+        <!-- Ranking - Start -->
+        <div class="container-fluid mt-4" id="home-rank">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-md-7">
+                        <h3 class="fs-2 m-5 ms-3 text-primary">Ranking dos melhores times</h3>
+                        <p class="text-light ms-5 me-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eveniet, corporis reiciendis deserunt impedit earum a odio omnis autem error molestiae vero aspernatur quaerat? A sunt corporis mollitia fuga suscipit.</p>
+                        <a href="#" class="btn btn-dark ms-5 me-4 mt-4">Ver Tabela Completa</a>
+                    </div>
+                    <div class="col-md-5 my-5">
+                        <div class="table-responsive">
+                            <table class="table table-striped align-items-center table-flush caption-top">
+                                <thead class="bg-dark text-light">
+                                <tr>
+                                    <th scope="col" class="text-center">P</th>
+                                    <th scope="col" class="text-center px-0">Time</th>
+                                    <th scope="col" class="text-center col-md-3"></th>
+                                    <th scope="col" class="text-center">W</th>
+                                    <th scope="col" class="text-center">D</th>
+                                    <th scope="col" class="text-center">L</th>
+                                    <th scope="col" class="text-center">PTS</th>
+                                </tr>
+                                </thead>
+                                <tbody class="bg-light">
+                                <tr>
+                                    <th scope="row" class=" text-center align-middle">
+                                        <span class="mx-1">1</span>
+                                    </th>
+                                    <td class="text-center align-middle px-0">
+                                        <img src="../content/images/countries/Catar.png" alt="">
+                                    </td>
+                                    <td class="align-middle ps-0">Catar</td>
+                                    <td class="text-center align-middle">0</td>
+                                    <td class="text-center align-middle">0</td>
+                                    <td class="text-center align-middle">0</td>
+                                    <td class="text-center align-middle">0</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class=" text-center align-middle">
+                                        <span class="mx-1">1</span>
+                                    </th>
+                                    <td class="text-center align-middle px-0">
+                                        <img src="../content/images/countries/Catar.png" alt="">
+                                    </td>
+                                    <td class="align-middle ps-0">Catar</td>
+                                    <td class="text-center align-middle">0</td>
+                                    <td class="text-center align-middle">0</td>
+                                    <td class="text-center align-middle">0</td>
+                                    <td class="text-center align-middle">0</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class=" text-center align-middle">
+                                        <span class="mx-1">1</span>
+                                    </th>
+                                    <td class="text-center align-middle px-0">
+                                        <img src="../content/images/countries/Catar.png" alt="">
+                                    </td>
+                                    <td class="align-middle ps-0">Catar</td>
+                                    <td class="text-center align-middle">0</td>
+                                    <td class="text-center align-middle">0</td>
+                                    <td class="text-center align-middle">0</td>
+                                    <td class="text-center align-middle">0</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class=" text-center align-middle">
+                                        <span class="mx-1">1</span>
+                                    </th>
+                                    <td class="text-center align-middle px-0">
+                                        <img src="../content/images/countries/Catar.png" alt="">
+                                    </td>
+                                    <td class="align-middle ps-0">Catar</td>
+                                    <td class="text-center align-middle">0</td>
+                                    <td class="text-center align-middle">0</td>
+                                    <td class="text-center align-middle">0</td>
+                                    <td class="text-center align-middle">0</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class=" text-center align-middle">
+                                        <span class="mx-1">1</span>
+                                    </th>
+                                    <td class="text-center align-middle px-0">
+                                        <img src="../content/images/countries/Catar.png" alt="">
+                                    </td>
+                                    <td class="align-middle ps-0">Catar</td>
+                                    <td class="text-center align-middle">0</td>
+                                    <td class="text-center align-middle">0</td>
+                                    <td class="text-center align-middle">0</td>
+                                    <td class="text-center align-middle">0</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Ranking - End -->
+
+        <!-- Top Jogadores - Start -->
+        <div class="container-fluid">
+            <div class="container">
+                <h3 class="text-primary mt-5 mb-3">Top Jogadores</h3>
+                <div class="row">
+                    <div class="owl-carousel players-carousel owl-theme mb-5">
+                        <div class="item">
+                            <div class="card border-0 bg-dark text-white">
+                                <img src="../content/images/players/player_01.jpg" alt="">
+                                <div class="card-body text-center">
+                                    <h5 class="font-24 border-bottom pb-2">Nome Jogador</h5>
+                                    <div class="row">
+                                        <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                            <small class="font-16">Função</small>
+                                        </div>
+                                        <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                            <img src="../content/images/countries/Catar.png" alt="" style="width: 48px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border-0 bg-dark text-white">
+                            <img src="../content/images/players/player_02.jpg" alt="">
+                            <div class="card-body text-center">
+                                <h5 class="font-24 border-bottom pb-2">Nome Jogador</h5>
+                                <div class="row">
+                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                        <small class="font-16">Função</small>
+                                    </div>
+                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                        <img src="../content/images/countries/Catar.png" alt="" style="width: 48px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border-0 bg-dark text-white">
+                            <img src="../content/images/players/player_03.jpg" alt="">
+                            <div class="card-body text-center">
+                                <h5 class="font-24 border-bottom pb-2">Nome Jogador</h5>
+                                <div class="row">
+                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                        <small class="font-16">Função</small>
+                                    </div>
+                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                        <img src="../content/images/countries/Catar.png" alt="" style="width: 48px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border-0 bg-dark text-white">
+                            <img src="../content/images/players/player_04.jpg" alt="">
+                            <div class="card-body text-center">
+                                <h5 class="font-24 border-bottom pb-2">Nome Jogador</h5>
+                                <div class="row">
+                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                        <small class="font-16">Função</small>
+                                    </div>
+                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                        <img src="../content/images/countries/Catar.png" alt="" style="width: 48px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Top Jogadores - End -->
+
+        <!-- Partners - Start -->
+        <div class="container-fluid" style="background-color: #444;">
+            <div class="container">
+                <h3 class="text-center fs-2 py-4 text-primary">Patrocinadores</h3>
+                <div class="row py-1 pb-5 text-center">
+                    <div class="col-md-2 d-flex align-items-center justify-content-center"><a href="#"><img src="../content/images/partners/Adidas.webp" alt=""></a></div>
+                    <div class="col-md-2 mt-4 d-flex align-items-center justify-content-center"><a href="#"><img src="../content/images/partners/Coca Cola.webp" alt=""></a></div>
+                    <div class="col-md-2 mt-4 d-flex align-items-center justify-content-center"><a href="#"><img src="../content/images/partners/Hyundai.webp" alt=""></a></div>
+                    <div class="col-md-2 mt-4 d-flex align-items-center justify-content-center"><a href="#"><img src="../content/images/partners/Qatar Energy.webp" alt=""></a></div>
+                    <div class="col-md-2 mt-4 d-flex align-items-center justify-content-center"><a href="#"><img src="../content/images/partners/Qatar.webp" alt=""></a></div>
+                    <div class="col-md-2 mt-4 d-flex align-items-center justify-content-center"><a href="#"><img src="../content/images/partners/Wanda.webp" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+        <!-- Partners - End -->
         
     </section>
 
+    <!-- Footer -->
     <div class="container-fluid bg-dark">
         <div class="container text-white">
             <footer class="pt-5">
@@ -286,8 +546,11 @@
     </div>
 
     <!-- Scripts -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
     <script src="../js/bootstrap.js"></script>
-    <script src="https://kit.fontawesome.com/20102b8b28.js" crossorigin="anonymous"></script>
+    <script src="../js/fontawesome.min.js"></script>
+    <script src="../js/scripts.js"></script>
     
 </body>
 </html>
