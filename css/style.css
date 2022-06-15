@@ -58,6 +58,9 @@ body{
     margin: 0;
     background-attachment: fixed;
 }
+li {
+  list-style: none;
+}
 .body{
   background: linear-gradient(#294174, #000000);
 }
@@ -102,17 +105,20 @@ a.dropdown-item:hover{
   right: 0;
 }
 .owl-nav img{
-  width: 24px;
+  width: 26px;
+  margin-right: 5px;
+}
+.owl-nav .owl-prev, 
+.owl-nav .owl-next{
+  outline: none;
+  opacity: 0.6;
+  transition: all .5s ease;
+} 
+
+.owl-nav .owl-prev:hover, 
+.owl-nav .owl-next:hover{
+  background: none !important;
+  outline: none !important;
+  opacity: 1;
   
 }
-
-.owl-nav .owl-prev, .owl-nav .owl-next{
-  
-  transition: all .5s ease;
-  
-} 
-
-.owl-nav .owl-prev:hover, .owl-nav .owl-next:hover{
-  
-  
-} 

@@ -1,6 +1,6 @@
 /* Carousol - Start */
-const nextIcon = '<img src="../content/images/icons/right-arrow.svg" alt:"right">';
-const prevIcon = '<img src="../content/images/icons/left-arrow.svg" alt:"left">';
+const nextIcon = '<img src="../content/images/icons/right-arrow.png" alt:"right">';
+const prevIcon = '<img src="../content/images/icons/left-arrow.png" alt:"left">';
 $('.news-carousel').owlCarousel({
     loop:true,
     autoplay:true,
