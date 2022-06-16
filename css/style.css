@@ -48,11 +48,9 @@
 
 html{
   height: 100vh;
-  
 }
 
 body{
-    
     height: 100%;
 	  background-repeat: no-repeat;
     margin: 0;
@@ -61,7 +59,7 @@ body{
 li {
   list-style: none;
 }
-.body{
+main{
   background: linear-gradient(#294174, #000000);
 }
 .font-12{
